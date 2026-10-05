@@ -1,15 +1,11 @@
-# 平台本地运行端口号
 VITE_PORT =6003
 
-# 开发环境读取配置文件路径
+VITE_APP_TITLE=Madok Admin
+
 VITE_PUBLIC_PATH = ./
 VITE_HIDE_HOME = true
-#VITE_API_BASE_URL = "http://172.31.64.13:19030/"
-#VITE_API_BASE_URL = "http://match.kmgfat.com/match/"
-#VITE_API_BASE_URL = "https://match.dpuat.com/match/"
-# 生产环境
-VITE_API_BASE_URL = "https://match.dppro6.com/match/"
-# 开发环境路由历史模式（Hash模式传"hash"、HTML5模式传"h5"、Hash模式带base参数传"hash,base参数"、HTML5模式带base参数传"h5,base参数"）
+
+VITE_API_BASE_URL = "https://madok.devnotation.com/api"
 VITE_ROUTER_HISTORY = "hash"
 VITE_CDN = false
 
