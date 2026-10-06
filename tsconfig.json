@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
+    "ignoreDeprecations": "5.0",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
@@ -34,22 +35,47 @@
     "types": [
       "node",
       "vite/client",
-      "element-plus/global",
-      "@pureadmin/table/volar",
-      "@pureadmin/descriptions/volar"
+      "element-plus/global"
     ]
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
+    "src/App.vue",
+    "src/main.ts",
+    "src/router/index.ts",
+    "src/store/auth.ts",
+    "src/api/auth.ts",
+    "src/api/request.ts",
+    "src/utils/permissions.ts",
+    "src/layout/AdminLayout.vue",
+    "src/views/login/index.vue",
+    "src/views/dashboard/index.vue",
+    "src/views/reports/index.vue",
+    "src/views/locations/index.vue",
+    "src/views/statistics/index.vue",
+    "src/views/system/users/index.vue",
+    "src/views/system/roles/index.vue",
+    "src/views/system/settings/index.vue",
+    "src/views/system/audit-logs/index.vue",
+    "src/views/error/403.vue",
+    "src/views/error/404.vue",
+    "src/**/*.d.ts",
     "types/*.d.ts",
-    "vite.config.ts",
-    "src/plugins/i18n.ts"
+    "vite.config.ts"
   ],
   "exclude": [
     "dist",
-    "**/*.js",
-    "node_modules"
+    "node_modules",
+    "src/views/systemManager/**",
+    "src/store/multiTags.ts",
+    "src/store/permission.ts",
+    "src/store/riskNotice.ts",
+    "src/store/user.ts",
+    "src/router/utils.ts",
+    "src/router/permissionRouter.ts",
+    "src/router/modules/**",
+    "src/layout/components/**",
+    "src/layout/hooks/**",
+    "src/layout/types.ts",
+    "src/layout/frameView.vue"
   ]
 }

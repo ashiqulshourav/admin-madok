@@ -82,7 +82,8 @@
     height: 100%;
     overflow: hidden;
     font-size: 0;
-    background: $menuBg;
+    // background: $menuBg;
+    background: inherit;
     box-shadow: 0 0 1px #888;
 
     /* 展开动画 */
@@ -398,7 +399,8 @@
     justify-content: space-around;
     width: 100%;
     height: 48px;
-    background: $menuBg;
+    // background: $menuBg;
+    background: inherit;
 
     .horizontal-header-left {
       display: flex;
@@ -514,7 +516,8 @@
     .el-sub-menu__title {
       height: 48px;
       line-height: 48px;
-      background: $menuBg;
+      // background: $menuBg;
+    background: inherit;
 
       svg {
         position: static !important;
